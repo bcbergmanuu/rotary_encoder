@@ -39,7 +39,7 @@ int main() {
         sleep_ms(1);
         
         if (last != rx[0]) {
-            uint16_t received_mask = (rx[0] & 8191);
+            uint16_t received_mask = (rx[0] & 16383);
             //printf("received %u\t", rx[0]);
             //printf("masked %u\t", received_mask);
             uint16_t binary = grayToBinary(received_mask);

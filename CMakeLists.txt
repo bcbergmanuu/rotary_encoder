@@ -54,7 +54,7 @@ target_include_directories(ssi_rotary PRIVATE
 )
 
 # Add any user requested libraries
-target_link_libraries(ssi_rotary hardware_spi hardware_pio)
+target_link_libraries(ssi_rotary hardware_spi)
 
 pico_add_extra_outputs(ssi_rotary)
 
